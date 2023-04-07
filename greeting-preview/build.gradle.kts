@@ -57,7 +57,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 groupId = "com.github.VladimirSergeevichFedorov"
                 artifactId = "greeting-preview"
-                version = "1.0"
+                version = "1.1"
 
 //                from(components["java"])
             }

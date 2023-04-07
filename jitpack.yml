@@ -1,5 +1,4 @@
 jdk:
   - openjdk11
 install:
-  install:
     - ./gradlew publish

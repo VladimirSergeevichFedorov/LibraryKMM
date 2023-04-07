@@ -1,4 +1,4 @@
 jdk:
   - openjdk11
 install:
-  - ./gradlew clean -Pgroup=com.github.DetachHead -Pversion=692c478017 -xcheck build publishToMavenLocal
+  - ./gradlew clean -Pgroup=com.github.VladimirSergeevichFedorov -Pversion=692c478017 -xcheck build publishToMavenLocal

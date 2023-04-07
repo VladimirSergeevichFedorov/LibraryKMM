@@ -3,7 +3,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id ("maven-publish")
+    `maven-publish`
 }
 
 android {
@@ -50,19 +50,20 @@ dependencies {
     implementation("androidx.compose.material:material:1.3.1")
 
 }
-//afterEvaluate {
-//    publishing {
-//        publications {
-//            release(MavenPublication) {
-//                from components.release
-//
-//                        groupId = "com.github.philipplackner"
-//                artifactId = 'image-preview-compose'
-//                version = '1.0'
-//            }
-//        }
-//    }
-//}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                groupId = "com.github.VladimirSergeevichFedorov"
+                artifactId = "greeting-preview"
+                version = "1.0"
+
+//                from(components["java"])
+            }
+        }
+    }
+}
 
 //afterEvaluate {
 //    publishing {

@@ -1,4 +1,4 @@
 jdk:
   - openjdk11
-before_install:
-  - ./scripts/prepareJitpackEnvironment.sh
+install:
+  - ./gradlew clean -Pgroup=com.github.DetachHead -Pversion=692c478017 -xcheck build publishToMavenLocal

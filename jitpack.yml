@@ -1,4 +1,5 @@
 jdk:
   - openjdk11
 install:
-  - ./gradlew clean -Pgroup=com.github.VladimirSergeevichFedorov -Pversion=692c478017 -xcheck build publishToMavenLocal
+  install:
+    - ./gradlew publish
